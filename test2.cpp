@@ -117,7 +117,7 @@ void checkbase(chess_data chess) {
 	for (int x = 0; x < 3; x++) {
 		for (int y = 0; y < 3; y++) {
 			if (chess.data[x][y]) {
-				if (chess.xy.Y >= Y + CHESS_HIGHT - 4) {
+				if (chess.xy.Y >= Y + CHESS_HIGHT - 2) {
 					gotoxy(chess.xy.X + x * 2, chess.xy.Y + y);
 					printf("¡ö");
 				}
